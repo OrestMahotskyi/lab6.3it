@@ -4,24 +4,24 @@
 using namespace std;
 
 // Шаблонна функція для обміну елементів масиву з парними та непарними індексами
-template <typename T>
-void swapAdjacentElements(T arr[], int size) {
+
+void swapAdjacentElements(int arr[], int size) {
     for (int i = 1; i < size; i += 2) {
         swap(arr[i - 1], arr[i]); // Міняємо місцями елементи з індексами i-1 та i
     }
 }
 
 // Шаблонна функція для генерації масиву
-template <typename T>
-void generateArray(T arr[], int size) {
+
+void generateArray(int arr[], int size) {
     for (int i = 0; i < size; i++) {
         arr[i] = rand() % 100; // Генерація чисел від 0 до 99
     }
 }
 
 // Шаблонна функція для виведення масиву
-template <typename T>
-void printArray(const T arr[], int size) {
+
+void printArray(const int arr[], int size) {
     for (int i = 0; i < size; i++) {
         cout << setw(4) << arr[i];
     }
